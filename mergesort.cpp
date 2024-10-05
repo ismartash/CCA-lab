@@ -2,7 +2,6 @@
 using namespace std;
 void merge(int arr[],int l,int mid,int r)
 {
-    //divide array in two part
     int n1=mid-l+1;
     int n2=r-mid;
     int a[n1]; 
@@ -62,7 +61,7 @@ void mergesort(int arr[],int l,int r,int n)
 int main()
 {
     int n;
-    cout<<"enter no"<<endl;
+    cout<<"enter no of elements"<<endl;
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++)
