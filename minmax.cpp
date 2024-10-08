@@ -3,13 +3,13 @@
 using namespace std;
 
 void minmaxi(int arr[], int start, int end, int &mini, int &maxi) {
-    if (start == end) {
+    if (start == end) { //ekch element asla tr
         mini=arr[start];
         maxi=arr[end];
         return;
     }
 
-    if (start + 1 == end) {
+    if (start + 1 == end) {   //don element asle tr
         if (arr[start] < arr[end]) {
             mini= arr[start];
             maxi= arr[end];
