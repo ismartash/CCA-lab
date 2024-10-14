@@ -62,10 +62,10 @@ bool nqueen(int arr[][4], int x, int n) {
 }
 
 int main() {
-    int n = 4;
-    int arr[4][4] = {0}; 
-
+    int n=4;
+    int arr[4][4]={0};
     if (nqueen(arr, 0, n)) {
+        cout<<"solutionn for 4x4 chess board"<<endl;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 cout << arr[i][j] << " ";
@@ -73,9 +73,8 @@ int main() {
             cout << endl;
         }
     } else {
-        cout << "No solution exists." << endl;
+        cout <<"no solution exist"<< endl;
     }
-
     return 0;
 }
 

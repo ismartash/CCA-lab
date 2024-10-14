@@ -70,6 +70,7 @@ int main()
         cin>>arr[i];
     }
     mergesort(arr,0,n,n);
+    cout<<"sorted array using merge sort"<<endl;
     for(int i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";

@@ -63,11 +63,18 @@ class ash {
 };
 
 int main() {
-    ash g(9);
-    g.addedge(0, 1, 4);
-    g.addedge(0, 2, 8);
-    g.addedge(2, 3, 7);
-    g.addedge(1, 3, 9);
+    int n, m;
+    cout<< "enter no of vertices"<<endl;
+    cin>>n;
+    ash g(n);
+    cout << "enter  number of edges"<<endl;
+    cin>>m;
+    cout <<"enter the edges (source dest weigt):"<<endl;
+    for (int i = 0; i < m; i++) {
+        int u, v, weight;
+        cin >> u >> v >> weight;
+        g.addedge(u, v, weight);
+    }
     g.kruskal();
     return 0;
 }

@@ -43,6 +43,7 @@ int main()
         cin>>arr[i];
     }
     quicksort(arr,first,last,n);
+    cout<<"sorted array using quick sort"<<endl;
     for(int i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";
